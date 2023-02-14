@@ -17,18 +17,6 @@ declare global {
 	// it is great for performance.
 	var _mongoClientPromise: Promise<MongoClient>;
 
-	// Useless interface for the example.
-	interface Project {
-		title: string;
-	}
-
-	// The basic model of a User.
-	interface User {
-		email: string; // the email address
-		password: string; // the hashed password
-		picture?: string; // the Object Id leading to the file of his profile picture
-	}
-
 	// Metadata for uploading files + a custom one I recommend
 	interface UploadMetadata extends Document {
 		uploadedBy?: string;
